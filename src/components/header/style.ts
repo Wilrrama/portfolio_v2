@@ -1,5 +1,68 @@
 // style.js
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+// Keyframes para as animações
+const slideInFromTop = keyframes`
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`;
+
+const slideInFromRight = keyframes`
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`;
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+const glowEffect = keyframes`
+  0% {
+    text-shadow: 0 0 5px var(--main-color);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
+  }
+  100% {
+    text-shadow: 0 0 5px var(--main-color);
+  }
+`;
+
+const bounceIn = keyframes`
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
 
 export const StyledHeader = styled.header`
   position: fixed;
@@ -12,11 +75,34 @@ export const StyledHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  animation: ${slideInFromTop} 0.5s ease-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
   .logo {
     color: var(--white-color);
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     font-weight: 700;
+    position: relative;
+    animation: ${bounceIn} 0.8s ease-out;
+
+    &:hover {
+      animation: ${glowEffect} 1.5s ease-in-out infinite;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--main-color);
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
 
   #menu__icon {
@@ -24,10 +110,11 @@ export const StyledHeader = styled.header`
     color: var(--white-color);
     display: none;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: transform 0.3s ease;
 
     &:hover {
       color: var(--main-color);
+      transform: scale(1.1);
     }
   }
 
@@ -39,10 +126,29 @@ export const StyledHeader = styled.header`
       font-size: clamp(0.9rem, 2vw, 1rem);
       color: var(--white-color);
       font-weight: 500;
+      position: relative;
       transition: color 0.3s;
+      animation: ${fadeIn} 0.5s ease-out;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: var(--main-color);
+        transition: width 0.3s ease;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
 
       &:hover {
         color: var(--main-color);
+        text-shadow: 0 0 8px rgba(var(--main-color-rgb), 0.3);
       }
     }
   }
@@ -83,6 +189,7 @@ export const StyledHeader = styled.header`
 
       &.active {
         display: block;
+        animation: ${slideInFromRight} 0.3s ease-out forwards;
       }
 
       a {
@@ -90,15 +197,24 @@ export const StyledHeader = styled.header`
         font-size: 1.1rem;
         margin: 2rem 0;
         text-align: center;
-        transform: translateY(-20px);
+        transform: translateX(-50px);
         opacity: 0;
-        transition: 0.3s ease;
-      }
 
-      &.active a {
-        transform: translateY(0);
-        opacity: 1;
-        transition-delay: calc(0.15s * var(--i));
+        @keyframes slideInLinks {
+          0% {
+            transform: translateX(-50px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        &.active {
+          animation: slideInLinks 0.3s ease-out forwards;
+          animation-delay: calc(0.1s * var(--i));
+        }
       }
     }
   }
