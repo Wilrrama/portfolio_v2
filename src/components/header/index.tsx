@@ -6,6 +6,8 @@ function Header() {
         Wilson Alves
       </a>
 
+      <i className="bx bx-menu" id="menu__icon"></i>
+
       <nav className="header__nav">
         <a href="">Home</a>
         <a href="">Services</a>
