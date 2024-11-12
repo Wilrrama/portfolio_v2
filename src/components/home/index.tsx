@@ -3,7 +3,7 @@ import "boxicons/css/boxicons.min.css";
 
 function Home() {
   return (
-    <StyledHome>
+    <StyledHome id="home">
       <StyledHomeDetails>
         <div className="perfil__container">
           <h1>Wilson Alves</h1>
