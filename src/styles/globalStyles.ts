@@ -25,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background: var(--bg-color);
     color: var(--white-color)
   }
 

@@ -101,8 +101,12 @@ export const StyledHomeDetails = styled.div`
       white-space: nowrap;
       animation: ${typing} 2s steps(30);
 
-      @media (max-width: 768px) {
+      @media (max-width: 1010px) {
         font-size: clamp(2rem, 7vw, 3rem);
+      }
+
+      @media (max-width: 830px) {
+        font-size: clamp(2rem, 7vw, 2.5rem);
       }
 
       @media (max-width: 480px) {

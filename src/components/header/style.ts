@@ -1,4 +1,3 @@
-// style.js
 import styled, { keyframes } from "styled-components";
 
 // Keyframes para as animações
@@ -69,7 +68,7 @@ export const StyledHeader = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem 9%;
+  padding: 2%;
   background: var(--bg-color);
   display: flex;
   justify-content: space-between;
@@ -77,6 +76,7 @@ export const StyledHeader = styled.header`
   z-index: 100;
   animation: ${slideInFromTop} 0.5s ease-out;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 1px var(--main-color);
 
   .logo {
     color: var(--white-color);
@@ -170,7 +170,7 @@ export const StyledHeader = styled.header`
   }
 
   @media (max-width: 768px) {
-    padding: 1rem 3%;
+    padding: 0.5rem 2%;
 
     #menu__icon {
       display: block;
