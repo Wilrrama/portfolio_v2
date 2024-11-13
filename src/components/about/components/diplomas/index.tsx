@@ -1,15 +1,17 @@
+import { StyledDiplomas } from "./style";
+
 export function Diplomas() {
   return (
-    <section id="diplomas">
+    <StyledDiplomas>
       <h1>Formação Técnica</h1>
-      <ul>
+      <ul className="diplomas__list">
         <li>
-          <img src="" alt="" />
+          <img src="/doc/full_stack.jpg" alt="" />
           <h2>Desenvolvedor Full-Stack</h2>
           <p>Kenzie</p>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src="/doc/tec_info.jpeg" alt="" />
           <h2>Técnico Informática</h2>
           <p>Dom Pedro</p>
         </li>
@@ -19,7 +21,7 @@ export function Diplomas() {
           <p>Senai</p>
         </li>
       </ul>
-    </section>
+    </StyledDiplomas>
   );
 }
 
