@@ -1,29 +1,19 @@
+import { tecnologies } from "../../../../data/tecnologies";
+import { StyledSkills } from "./style";
+
 export function Skills() {
   return (
-    <section id="skills">
-      <ul>
-        <li>
-          <img src="" alt="" />
-          <h2>React</h2>
-          <p>1 ano</p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <h2>Node Js</h2>
-          <p>1 ano</p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <h2>JavaScript</h2>
-          <p>1 ano</p>
-        </li>
-        <li>
-          <img src="" alt="" />
-          <h2>Css</h2>
-          <p>1 ano</p>
-        </li>
+    <StyledSkills id="skills">
+      <ul className="skill__list">
+        {tecnologies.map((tecnologie) => (
+          <li key={tecnologie.id}>
+            <img src={tecnologie.img} alt={tecnologie.nome} />
+            <h2>{tecnologie.nome}</h2>
+            <p>{tecnologie.experiencia}</p>
+          </li>
+        ))}
       </ul>
-    </section>
+    </StyledSkills>
   );
 }
 
