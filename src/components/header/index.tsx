@@ -9,11 +9,10 @@ function Header() {
       <i className="bx bx-menu" id="menu__icon"></i>
 
       <nav className="header__nav">
-        <a href="">Home</a>
-        <a href="">Services</a>
-        <a href="">Resume</a>
-        <a href="">Projetos</a>
-        <a href="">Contato</a>
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contato</a>
       </nav>
     </StyledHeader>
   );

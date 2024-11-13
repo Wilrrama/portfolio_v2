@@ -8,7 +8,8 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     border: none;
     outline: none;      
-	  font-family: "Poppins", sans-serif; 
+	  font-family: "Poppins", sans-serif;
+    
   }
 
    :root {
@@ -25,8 +26,14 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+   
     background: var(--bg-color);
     color: var(--white-color)
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--white-color);
   }
 
   
