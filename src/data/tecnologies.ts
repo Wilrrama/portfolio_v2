@@ -1,11 +1,10 @@
-import html from "../../public/tecnologies/html.png";
-import css from "../../public/tecnologies/css.png";
-import js from "../../public/tecnologies/js.png";
-import nodejs from "../../public/tecnologies/nodejs.png";
-import typeScript from "../../public/tecnologies/typeScript.png";
-
-import react from "../../public/tecnologies/react2.png";
-import postgresql from "../../public/tecnologies/postgresql.png";
+import html from "/tecnologies/html.png";
+import css from "/public/tecnologies/css.png";
+import js from "/public/tecnologies/js.png";
+import nodejs from "/public/tecnologies/nodejs.png";
+import typeScript from "/public/tecnologies/typeScript.png";
+import react from "/public/tecnologies/react2.png";
+import postgresql from "/public/tecnologies/postgresql.png";
 
 export const tecnologies = [
   {
