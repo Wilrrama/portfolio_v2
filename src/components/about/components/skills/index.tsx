@@ -3,7 +3,7 @@ import { StyledSkills } from "./style";
 
 export function Skills() {
   return (
-    <StyledSkills id="skills">
+    <StyledSkills>
       <ul className="skill__list">
         {tecnologies.map((tecnologie) => (
           <li key={tecnologie.id}>
