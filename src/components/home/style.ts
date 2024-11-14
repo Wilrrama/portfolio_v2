@@ -229,7 +229,7 @@ export const StyledHomeBoxImg = styled.div`
   position: relative;
   width: 40%;
   border-radius: 50%;
-  padding: 0.5rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

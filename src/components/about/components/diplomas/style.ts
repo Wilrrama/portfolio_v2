@@ -9,13 +9,12 @@ export const StyledDiplomas = styled.section`
   h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: var(--white-color);
   }
 
   .diplomas__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2.5rem;
     justify-content: center;
     padding: 0;
 
@@ -24,15 +23,15 @@ export const StyledDiplomas = styled.section`
       flex-direction: column;
       align-items: center;
       padding: 1rem;
-      border: 1px solid var(--white-color);
+      border: 1px solid var(--main-color);
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px var(--main-color);
       max-width: 300px;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 
       &:hover {
         transform: scale(1.05);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 2rem var(--main-color);
       }
 
       img {
@@ -46,13 +45,11 @@ export const StyledDiplomas = styled.section`
       h2 {
         font-size: 1.1rem;
         margin: 0.5rem 0;
-
         text-align: center;
       }
 
       p {
         font-size: 0.9rem;
-
         text-align: center;
       }
     }

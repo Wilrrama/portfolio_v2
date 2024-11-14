@@ -118,9 +118,9 @@ export const StyledAbout = styled.section`
 
       a {
         border-radius: 1rem;
-        border: solid 1px var(--main-color);
+        box-shadow: 0 0 0.5rem var(--main-color);
         width: 200px;
-        text-align: center;
+        align-self: center;
       }
     }
   }
