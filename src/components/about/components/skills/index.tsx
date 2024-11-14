@@ -4,6 +4,7 @@ import { StyledSkills } from "./style";
 export function Skills() {
   return (
     <StyledSkills>
+      <h1>Skills</h1>
       <ul className="skill__list">
         {tecnologies.map((tecnologie) => (
           <li key={tecnologie.id}>
