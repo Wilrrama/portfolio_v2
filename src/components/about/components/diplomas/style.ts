@@ -9,6 +9,7 @@ export const StyledDiplomas = styled.section`
   h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+    color: var(--main-color);
   }
 
   .diplomas__list {

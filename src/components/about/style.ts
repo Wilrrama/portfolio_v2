@@ -120,7 +120,7 @@ export const StyledAbout = styled.section`
         border-radius: 1rem;
         box-shadow: 0 0 0.5rem var(--main-color);
         width: 200px;
-        align-self: center;
+        text-align: center;
       }
     }
   }

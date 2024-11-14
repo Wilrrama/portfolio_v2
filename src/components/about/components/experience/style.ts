@@ -9,12 +9,12 @@ export const StyledExperience = styled.section`
   h1 {
     text-align: center;
     font-size: 2rem;
-    font-weight: bold;
     margin-bottom: 1rem;
+    color: var(--main-color);
   }
 
   .experience__list {
-    width: 100%;
+    width: 90%;
     max-width: 800px;
     list-style: none;
     padding: 0;

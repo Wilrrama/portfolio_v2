@@ -6,7 +6,7 @@ export function Bibliography() {
       <h1>Bibliografia</h1>
       <div className="container__bibliography">
         <div className="img__bibliography">
-          <img src="/perfil/home.png" alt="imagem do wilson" />
+          <img src="/perfil/bibliography.jpg" alt="imagem do wilson" />
         </div>
         <div className="details__bibliography">
           <p>
