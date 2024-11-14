@@ -11,6 +11,7 @@ export const StyledSkills = styled.section`
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    color: var(--main-color);
   }
 
   .skill__list {
@@ -22,8 +23,7 @@ export const StyledSkills = styled.section`
 
     li {
       display: flex;
-      min-width: 8rem;
-
+      width: 8rem;
       flex-direction: column;
       align-items: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -34,8 +34,11 @@ export const StyledSkills = styled.section`
 
       &:hover {
         transform: scale(1.1);
-
         box-shadow: 0 0 2rem var(--main-color);
+      }
+
+      h2 {
+        font-size: 1rem;
       }
 
       img {

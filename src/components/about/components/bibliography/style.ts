@@ -12,6 +12,7 @@ export const StyledBibliography = styled.section`
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
+    color: var(--main-color);
   }
 
   .container__bibliography {
@@ -29,6 +30,7 @@ export const StyledBibliography = styled.section`
     .img__bibliography {
       flex: 1;
       max-width: 200px;
+      box-shadow: 0 0 1rem var(--main-color);
 
       img {
         width: 100%;
