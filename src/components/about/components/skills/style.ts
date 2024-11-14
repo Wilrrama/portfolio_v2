@@ -28,12 +28,13 @@ export const StyledSkills = styled.section`
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       padding: 1rem;
       border-radius: 8px;
-      border: 1px solid var(--white-color);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid var(--main-color);
+      box-shadow: 0 4px 8px var(--main-color);
 
       &:hover {
         transform: scale(1.1);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+        box-shadow: 0 0 2rem var(--main-color);
       }
 
       img {
