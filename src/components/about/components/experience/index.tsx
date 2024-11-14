@@ -3,6 +3,7 @@ import { StyledExperience } from "./style";
 export function Experience() {
   return (
     <StyledExperience>
+      <h1>Experiencias Profissionais</h1>
       <ul className="experience__list">
         {/* Metal Games */}
         <li className="experience__list__container">

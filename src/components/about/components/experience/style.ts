@@ -4,7 +4,14 @@ export const StyledExperience = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
+  padding: 1rem 0 1rem 0;
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
 
   .experience__list {
     width: 100%;

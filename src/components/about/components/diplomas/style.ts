@@ -4,7 +4,7 @@ export const StyledDiplomas = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 
   h1 {
     font-size: 2rem;

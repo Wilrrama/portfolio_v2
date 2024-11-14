@@ -4,13 +4,13 @@ export const StyledSkills = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 
-  h2 {
-    margin-top: 0.5rem;
-    font-size: 1rem;
+  h1 {
     text-align: center;
-    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
   }
 
   .skill__list {
@@ -18,11 +18,12 @@ export const StyledSkills = styled.section`
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 
     li {
       display: flex;
-      width: 8rem;
+      min-width: 8rem;
+
       flex-direction: column;
       align-items: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
