@@ -66,8 +66,7 @@ export const StyledHome = styled.section`
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  padding: 1rem 9% 2rem;
-  background: var(--bg-color);
+  padding: 3rem 9% 2rem;
   animation: ${fadeIn} 1s ease-out;
 
   @media (max-width: 1200px) {
@@ -76,13 +75,13 @@ export const StyledHome = styled.section`
   }
 
   @media (max-width: 991px) {
-    padding: 1rem 4% 2rem;
+    padding: 6rem 4% 2rem;
     gap: 2rem;
   }
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 `;
 
@@ -116,7 +115,7 @@ export const StyledHomeDetails = styled.div`
 
     h2 {
       display: inline-block;
-      font-size: clamp(1.8rem, 4vw, 2.2rem);
+      font-size: clamp(1.8rem, 4vw, 2rem);
       line-height: 1.4;
       margin: 0.5rem 0;
       opacity: 0;
@@ -239,6 +238,7 @@ export const StyledHomeBoxImg = styled.div`
 
   &::before {
     content: "";
+
     position: absolute;
     width: 100%;
     height: 100%;
@@ -266,6 +266,6 @@ export const StyledHomeBoxImg = styled.div`
   }
 
   @media (max-width: 480px) {
-    width: 90%;
+    width: 70%;
   }
 `;
