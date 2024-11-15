@@ -16,7 +16,11 @@ function Home() {
         </div>
 
         <div className="btn__container">
-          <a href="" className="cvn">
+          <a
+            href="/doc/curriculo_wilson.pdf"
+            download="curriculo_wilson.pdf"
+            className="cvn"
+          >
             Currículo
           </a>
           <div className="icons">

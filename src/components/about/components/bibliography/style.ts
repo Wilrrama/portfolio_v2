@@ -19,6 +19,7 @@ export const StyledBibliography = styled.section`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    padding-bottom: 1rem;
     gap: 3rem;
 
     @media (max-width: 768px) {
