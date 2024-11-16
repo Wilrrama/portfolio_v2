@@ -3,7 +3,6 @@ import peregrino from "/projects/2.peregrino.png";
 import boleiros_liga from "/projects/3.boleirosliga.jpg";
 import leandro_barber from "/projects/4.LeandroBarber.png";
 import coco_campeao from "/projects/5.coco_campeao.png";
-import nu_kenzie from "/projects/6.nu_kenzie.png";
 import portfy from "/projects/7.portfy.png";
 import kenkie_hub from "/projects/8.kenkie_hub.png";
 import food from "/projects/9.food.png";
