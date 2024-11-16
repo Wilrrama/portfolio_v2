@@ -36,14 +36,15 @@ function Projects() {
               <a href={project.git} target="_blank" rel="noopener noreferrer">
                 <i className="bx bxl-github"></i>
               </a>
-
-              <a
-                href={project.deploy}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bx bx-rocket"></i>
-              </a>
+              {project.deploy && (
+                <a
+                  href={project.deploy}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bx bx-rocket"></i>
+                </a>
+              )}
             </div>
             <div className="tech__container">
               {project.tech.map((tech, index) => (

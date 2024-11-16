@@ -1,4 +1,5 @@
 import About from "./components/about";
+import Contact from "./components/contact";
 import Header from "./components/header";
 import Home from "./components/home";
 import Projects from "./components/projects";
@@ -12,6 +13,7 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Contact />
     </>
   );
 }

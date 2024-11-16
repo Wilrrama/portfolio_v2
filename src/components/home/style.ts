@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-// Keyframes para animações
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -9,6 +8,18 @@ const fadeIn = keyframes`
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+`;
+
+const glowEffect = keyframes`
+  0% {
+    text-shadow: 0 0 5px var(--main-color);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
+  }
+  100% {
+    text-shadow: 0 0 5px var(--main-color);
   }
 `;
 
@@ -114,13 +125,14 @@ export const StyledHomeDetails = styled.div`
     }
 
     h2 {
-      display: inline-block;
+      display: inline-flex;
       font-size: clamp(1.5rem, 3vw, 2rem);
       line-height: 1.4;
       margin: 0.5rem 0;
       opacity: 0;
       animation: ${fadeIn} 1s ease-out forwards;
       animation-delay: 2s;
+      /* animation: ${glowEffect} 1.5s ease-in-out infinite; */
 
       @media (max-width: 768px) {
         font-size: clamp(1.5rem, 3.5vw, 1.8rem);
@@ -224,6 +236,7 @@ export const StyledHomeDetails = styled.div`
 `;
 
 export const StyledHomeBoxImg = styled.div`
+  margin-top: 50px;
   position: relative;
   width: 40%;
   border-radius: 50%;

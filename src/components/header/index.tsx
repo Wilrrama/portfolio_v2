@@ -12,7 +12,7 @@ function Header() {
         <a href="#home">Home</a>
         <a href="#sobre">Sobre</a>
         <a href="#projetos">Projetos</a>
-        <a href="#">Contato</a>
+        <a href="#contato">Contato</a>
       </nav>
     </StyledHeader>
   );
