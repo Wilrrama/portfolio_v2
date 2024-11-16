@@ -41,13 +41,13 @@ const bounceIn = keyframes`
 `;
 
 export const StyledAbout = styled.section`
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 6rem;
+  position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 
   .about__title {
     font-size: clamp(2rem, 3vw, 4rem);
