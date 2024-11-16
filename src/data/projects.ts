@@ -38,7 +38,7 @@ export const projects = [
     tipo: "FullStack",
     descrição: "Desafio Jack Experts",
     git: "https://github.com/Wilrrama/Desafio_ToDoList",
-    deploy: "https://github.com/Wilrrama/Desafio_ToDoList",
+    deploy: "",
     tech: [react, , nodejs, typescript],
   },
   {
@@ -58,8 +58,7 @@ export const projects = [
     tipo: "FullStack",
     descrição: "Aplicação full-stack lista de contatos",
     git: "https://github.com/Kenzie-Academy-Brasil-Developers/m6_Projeto_FullStack",
-    deploy:
-      "https://github.com/Kenzie-Academy-Brasil-Developers/m6_Projeto_FullStack",
+    deploy: "",
     tech: [react, , nodejs, typescript],
   },
   {
@@ -89,7 +88,7 @@ export const projects = [
     tipo: "FullStack",
     descrição: "Aplicativo de Video-Conferencia.",
     git: "https://github.com/Wilrrama/talk_to_me_hero_code",
-    deploy: "https://github.com/Wilrrama/talk_to_me_hero_code",
+    deploy: "",
     tech: [nodejs, typescript, nextjs, tailwind],
   },
   {
@@ -99,7 +98,7 @@ export const projects = [
     tipo: "FullStack",
     descrição: "Cardápio de Lanchonete, Crud, consumo de API.",
     git: "https://github.com/Wilrrama/Food_devPoint",
-    deploy: "https://github.com/Wilrrama/Food_devPoint",
+    deploy: "",
     tech: [react, nodejs],
   },
   {
@@ -123,16 +122,7 @@ export const projects = [
     deploy: "https://portify-indol.vercel.app",
     tech: [react, typescript],
   },
-  {
-    id: 6,
-    nome: "Nu Kenzie",
-    img: nu_kenzie,
-    tipo: "Front-End",
-    descrição: "Aplicação para a entrada e saida de valores.",
-    git: "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-template-nu-kenzie_Wilson",
-    deploy: "https://react-entrega-s1-template-nu-kenzie-wilson.vercel.app/",
-    tech: [react],
-  },
+
   {
     id: 5,
     nome: "Unidos do Coco",

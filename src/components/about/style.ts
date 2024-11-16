@@ -54,26 +54,11 @@ export const StyledAbout = styled.section`
     color: var(--white-color);
     font-weight: 700;
     position: relative;
-    animation: ${bounceIn} 0.8s ease-out;
+    animation: ${glowEffect} 1.5s ease-in-out infinite;
 
-    &:hover {
-      animation: ${glowEffect} 1.5s ease-in-out infinite;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--main-color);
-      transition: width 0.3s ease;
-    }
-
-    &:hover::after {
-      width: 100%;
-    }
+    /* &:hover {
+      animation: ${bounceIn} 0.8s ease-out;
+    } */
   }
 
   .about__nav {

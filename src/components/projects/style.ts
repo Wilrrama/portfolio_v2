@@ -55,10 +55,6 @@ export const StyledProjects = styled.section`
     animation: ${bounceIn} 0.8s ease-out;
     animation: ${glowEffect} 1.5s ease-in-out infinite;
 
-    &:hover {
-      animation: ${glowEffect} 1.5s ease-in-out infinite;
-    }
-
     &::after {
       content: "";
       position: absolute;
@@ -109,9 +105,9 @@ export const StyledProjects = styled.section`
 
       &:hover {
         color: var(--main-color);
-        text-shadow: 0 0 8px rgba(var(--main-color-rgb), 0.3);
       }
     }
+
     @media (max-width: 640px) {
       padding: 1rem;
       flex-direction: column;
