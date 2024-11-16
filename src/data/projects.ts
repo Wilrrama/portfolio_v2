@@ -4,6 +4,7 @@ import boleiros_liga from "/projects/3.boleirosliga.jpg";
 import leandro_barber from "/projects/4.LeandroBarber.png";
 import coco_campeao from "/projects/5.coco_campeao.png";
 import portfy from "/projects/7.portfy.png";
+import kenkie_hub from "/projects/8.kenkie_hub.png";
 import food from "/projects/9.food.png";
 import talktome from "/projects/10.talktome.png";
 import rosalia from "/projects/11.rosalia.jpeg";
