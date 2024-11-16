@@ -88,7 +88,7 @@ export const StyledHome = styled.section`
 
 export const StyledHomeDetails = styled.div`
   width: 40%;
-  gap: 2%;
+  gap: 1%;
   animation: ${slideInLeft} 1s ease-out;
 
   .perfil__container {
@@ -116,7 +116,7 @@ export const StyledHomeDetails = styled.div`
 
     h2 {
       display: inline-block;
-      font-size: clamp(1.8rem, 4vw, 2.2rem);
+      font-size: clamp(1.5rem, 3vw, 2rem);
       line-height: 1.4;
       margin: 0.5rem 0;
       opacity: 0;
@@ -175,7 +175,7 @@ export const StyledHomeDetails = styled.div`
   .icons {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 0.5rem;
   }
 
   .icons a {
@@ -184,7 +184,6 @@ export const StyledHomeDetails = styled.div`
     border: 0.2rem solid var(--main-color);
     border-radius: 50%;
     font-size: clamp(1.5rem, 4vw, 2rem);
-    color: var(--white-color);
     transition: all 0.3s ease;
     opacity: 0;
     animation: ${fadeIn} 0.5s ease-out forwards;
