@@ -16,7 +16,7 @@ export function Diplomas() {
           <p>Dom Pedro</p>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src="/doc/tec_hardware.png" alt="" />
           <h2>Técnico Hardware</h2>
           <p>Senai</p>
         </li>

@@ -42,8 +42,8 @@ export const StyledExperience = styled.section`
       gap: 3%;
 
       img {
-        width: 230px;
-        height: 180px;
+        width: 180px;
+        height: 140px;
         object-fit: cover;
         box-shadow: 0 0 1rem var(--main-color);
       }
