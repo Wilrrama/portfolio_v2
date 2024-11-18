@@ -19,6 +19,9 @@ export function Experience() {
               <strong>Função:</strong> Microempresário
             </p>
             <p>
+              <strong>Tempo:</strong> 1995 - 2022
+            </p>
+            <p>
               <strong>Descrição:</strong> A Metal Games começou como sala de
               jogos de vídeo-games, evoluiu para uma lan house, adicionou
               serviços de manutenção de computadores e, finalmente, se tornou
@@ -52,6 +55,9 @@ export function Experience() {
               <strong>Função:</strong> Organizador de Eventos
             </p>
             <p>
+              <strong>Tempo:</strong> 2019 - 2024
+            </p>
+            <p>
               <strong>Descrição:</strong> Organizei eventos esportivos e
               coordenei atividades da liga, promovendo o esporte e incentivando
               a participação da comunidade em eventos locais.
@@ -83,6 +89,13 @@ export function Experience() {
           </div>
 
           <div className="experience__container__details">
+            <p>
+              <strong>Função:</strong> Motorista e Coordenador de Ações de
+              Divulgação
+            </p>
+            <p>
+              <strong>Tempo:</strong> 2024
+            </p>
             <p>
               <strong>Função:</strong> Motorista e Coordenador de Ações de
               Divulgação

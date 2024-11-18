@@ -36,8 +36,8 @@ export const StyledDiplomas = styled.section`
       }
 
       img {
-        width: 200px;
-        height: 100px;
+        width: 250px;
+        height: 200px;
         object-fit: cover;
         border-radius: 4px;
         margin-bottom: 0.75rem;
