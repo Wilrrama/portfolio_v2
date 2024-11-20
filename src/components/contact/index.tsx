@@ -114,7 +114,7 @@ function Contact() {
           </span>
         </button>
       </form>
-      {/* {result && <p style={{ marginTop: "10px", color: "green" }}>{result}</p>} */}
+      {result && <p style={{ marginTop: "10px", color: "green" }}>{result}</p>}
     </StyledContact>
   );
 }
