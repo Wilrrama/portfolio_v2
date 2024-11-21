@@ -12,11 +12,15 @@ import liberdade from "/projects/12.liberdade.jpg";
 import react from "/tecnologies/react2.png";
 import typescript from "/tecnologies/typeScript.png";
 import nodejs from "/tecnologies/nodejs.png";
-import nextjs from "/tecnologies/nextjs.png";
+import nextjs from "/tecnologies/nextjs.webp";
 import tailwind from "/tecnologies/tailwind.png";
 import lista_contatos from "/projects/13.Lista_contatos.png";
 import peregrinho2 from "/projects/14.peregrinho2.png";
 import toDo_JackExperts from "/projects/15.ToDo_JackExperts.jpeg";
+import mongoDb from "/tecnologies/mongodb.svg";
+import drGeorge22 from "/projects/18.DrGeorge22.jpg";
+import equipeDigital from "/projects/16.equipeDigital.png";
+import boleiros3 from "/projects/17.boleiros3.jpeg";
 
 export interface IProjects {
   id: number;
@@ -31,11 +35,41 @@ export interface IProjects {
 
 export const projects = [
   {
+    id: 18,
+    nome: "Dr. George 22",
+    img: drGeorge22,
+    tipo: "Principais",
+    descrição: "Site para Campanha Política",
+    git: "https://github.com/Wilrrama",
+    deploy: "https://dr-george22.vercel.app/",
+    tech: [react],
+  },
+  {
+    id: 17,
+    nome: "Boleiros 3",
+    img: boleiros3,
+    tipo: "Principais",
+    descrição: "Gerenciador de Equipe",
+    git: "https://github.com/Wilrrama/boleiros_v3",
+    deploy: "https://boleiros-v3.vercel.app/",
+    tech: [react],
+  },
+  {
+    id: 16,
+    nome: "Lista de Contatos",
+    img: equipeDigital,
+    tipo: "Principais",
+    descrição: "Desafio Equipe Digital, Contact list",
+    git: "https://github.com/Wilrrama/user_auth",
+    deploy: "",
+    tech: [nextjs, typescript, mongoDb],
+  },
+  {
     id: 15,
     nome: "To Do List",
     img: toDo_JackExperts,
-    tipo: "FullStack",
-    descrição: "Desafio Jack Experts",
+    tipo: "Principais",
+    descrição: "Desafio Jack Experts, To do list",
     git: "https://github.com/Wilrrama/Desafio_ToDoList",
     deploy: "",
     tech: [react, , nodejs, typescript],
@@ -65,7 +99,7 @@ export const projects = [
     nome: "Liberdade",
     img: liberdade,
     tipo: "Front-End",
-    descrição: "Aplicação para a equipe campeão da Copa Amizade 2024",
+    descrição: "Aplicação para a equipe campeã da Copa Amizade 2024",
     git: "https://github.com/Wilrrama/liberdade",
     deploy: "https://liberdade.vercel.app/",
     tech: [react],
@@ -75,7 +109,7 @@ export const projects = [
     nome: "Rosália F. C.",
     img: rosalia,
     tipo: "Front-End",
-    descrição: "Aplicação para a equipe campeão da Copa Euro 2024",
+    descrição: "Aplicação para a equipe campeã da Copa Euro 2024",
     git: "https://github.com/Wilrrama/rosalia_fc",
     deploy: "https://rosaliafc.vercel.app/",
     tech: [react],
@@ -116,7 +150,7 @@ export const projects = [
     img: portfy,
     tipo: "Front-End",
     descrição:
-      "Cria um portifolio on-line, com CRUD e consumo de API, postagem de projetos.",
+      "Cria um portifolio on-line, consumo de API, postagem de projetos.",
     git: "https://github.com/mariosilva81/m3-g5-portify",
     deploy: "https://portify-indol.vercel.app",
     tech: [react, typescript],
@@ -127,8 +161,7 @@ export const projects = [
     nome: "Unidos do Coco",
     img: coco_campeao,
     tipo: "Front-End",
-    descrição:
-      "Aplicação para a equipe campeã da Copa dos Campeões 2023, organizada pela Liga Hortolandense ",
+    descrição: "Aplicação para a equipe campeã da Copa dos Campeões 2023",
     git: "https://github.com/Wilrrama/coco_campeao_2023",
     deploy: "https://unidos-do-coco.vercel.app/",
     tech: [react],
@@ -139,7 +172,7 @@ export const projects = [
     img: leandro_barber,
     tipo: "Front-End",
     descrição:
-      "Aplicação para meu barbeiro de confiança, divulgando seu Serviçoes e Produtos. E marcando presença na Web",
+      "Aplicação para meu barbeiro de confiança, divulgando seu Serviçoes e Produtos.",
     git: "https://github.com/Wilrrama/blackStyllusLeandro",
     deploy: "https://blackstyllus.vercel.app/",
     tech: [react],
@@ -150,7 +183,7 @@ export const projects = [
     img: boleiros_liga,
     tipo: "Front-End",
     descrição:
-      "Gerenciador de Lista de Participantes e Itens, de uma partida de futebol. Agora com venda de material Esportivo: Bolas",
+      "Gerenciador de Lista de Participantes e Itens. Venda de material Esportivo: Bolas",
     git: "https://github.com/Wilrrama/Boleiros-Liga",
     deploy: "https://boleiros-liga.vercel.app/",
     tech: [react],

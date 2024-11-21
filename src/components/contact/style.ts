@@ -36,7 +36,7 @@ export const StyledContact = styled.section`
   width: 100%;
   height: 100vh;
   padding-top: 6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +55,7 @@ export const StyledContact = styled.section`
   }
 
   form {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -92,6 +92,10 @@ export const StyledContact = styled.section`
       box-shadow: 0 0 1rem var(--main-color);
       background-color: var(--bg-color);
       color: var(--white-color);
+    }
+
+    @media (max-width: 640px) {
+      width: 90%;
     }
   }
 `;
