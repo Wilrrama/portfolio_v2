@@ -72,8 +72,9 @@ export const StyledProjects = styled.section`
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 90%;
-    padding: 1.5rem 0 1.5rem 0;
+    padding: 1rem 0 0 0;
     gap: 20px;
+    width: 70%;
 
     a {
       font-size: clamp(1rem, 2.5vw, 1.2rem);
@@ -109,15 +110,16 @@ export const StyledProjects = styled.section`
     }
 
     @media (max-width: 640px) {
-      padding: 1rem;
-      flex-direction: column;
-      gap: 20px;
+      padding: 0.5rem;
+      /* flex-direction: column; */
+      gap: 15px;
       align-items: center;
+      width: 90%;
 
       a {
         border-radius: 1rem;
         box-shadow: 0 0 0.5rem var(--main-color);
-        width: 200px;
+        width: 130px;
         text-align: center;
       }
     }
@@ -127,17 +129,17 @@ export const StyledProjects = styled.section`
 export const StyledProjectsList = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  width: 90%;
+  width: 50%;
   padding: 2rem 0;
   margin: 0 auto;
 
   li {
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding-top: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 1rem var(--main-color);
 
@@ -153,15 +155,15 @@ export const StyledProjectsList = styled.ul`
     }
 
     img {
-      width: 300px;
-      height: 400px;
+      width: 200px;
+      height: 180px;
       object-fit: cover;
       border-radius: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
     p {
-      margin: 0.5rem 0;
+      margin: 1rem;
       line-height: 1.6;
     }
 
@@ -175,7 +177,6 @@ export const StyledProjectsList = styled.ul`
       text-align: center;
       font-size: clamp(1.5rem, 4vw, 2rem);
       border-radius: 50%;
-
       display: inline-flex;
       justify-content: center;
       padding: 0.5rem;
@@ -196,7 +197,7 @@ export const StyledProjectsList = styled.ul`
       display: flex;
       justify-content: center;
       gap: 15px;
-      padding: 1rem 0 0;
+      padding: 1rem;
       img {
         width: 50px;
         height: 50px;
@@ -213,13 +214,37 @@ export const StyledProjectsList = styled.ul`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 1rem;
+    width: 90%;
 
     li {
       padding: 1rem;
 
-      img {
-        height: 180px;
-      }
+      /* img {
+        width: 200px;
+        height: 200px;
+      } */
     }
+  }
+`;
+
+export const StyledNavigationButtons = styled.div`
+  display: flex;
+  gap: 15px;
+  button {
+    background: var(--main-color);
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 0.2rem solid var(--main-color);
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: ${fadeIn} 0.5s ease-out forwards;
+  }
+
+  button:hover {
+    box-shadow: 0 0 1rem var(--main-color);
   }
 `;

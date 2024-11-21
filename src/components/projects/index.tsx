@@ -1,44 +1,69 @@
 import { useState } from "react";
 import { projects } from "../../data/projects";
-import { StyledProjects, StyledProjectsList } from "./style";
+import {
+  StyledNavigationButtons,
+  StyledProjects,
+  StyledProjectsList,
+} from "./style";
 import "boxicons/css/boxicons.min.css";
 
 function Projects() {
   const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [currentProject, setCurrentProject] = useState(0);
 
   const filterProjects = (type: string) => {
-    if (type === "Todos") {
-      setFilteredProjects(projects);
-    } else {
-      setFilteredProjects(projects.filter((project) => project.tipo === type));
+    // if (type === "Principais") {
+    //   setFilteredProjects(projects);
+    // } else {
+    setFilteredProjects(projects.filter((project) => project.tipo === type));
+    // }
+    setCurrentProject(0);
+  };
+
+  const nextProject = () => {
+    if (currentProject < filteredProjects.length - 1) {
+      setCurrentProject(currentProject + 1);
     }
   };
+
+  const prevProject = () => {
+    if (currentProject > 0) {
+      setCurrentProject(currentProject - 1);
+    }
+  };
+
   return (
     <StyledProjects id="projetos">
       <h1>Projetos</h1>
 
       <nav className="nav__projects">
-        {/* <a onClick={() => filterProjects("FullStack")}>Principais-Projetos</a> */}
-        <a onClick={() => filterProjects("Todos")}>Todos</a>
+        <a onClick={() => filterProjects("Principais")}>Principais</a>
         <a onClick={() => filterProjects("Front-End")}>Front-End</a>
         <a onClick={() => filterProjects("Back-End")}>Back-End</a>
         <a onClick={() => filterProjects("FullStack")}>Full-Stack</a>
       </nav>
 
       <StyledProjectsList>
-        {filteredProjects.map((project) => (
-          <li key={project.id}>
-            <h2>{project.nome}</h2>
-            {/* <p>{project.tipo}</p> */}
-            <img src={project.img} alt={project.nome} />
-            <p>{project.descrição}</p>
+        {filteredProjects.length > 0 && (
+          <li key={filteredProjects[currentProject].id}>
+            <h2>{filteredProjects[currentProject].nome}</h2>
+            {/* <p>{filteredProjects[currentProject].tipo}</p> */}
+            <img
+              src={filteredProjects[currentProject].img}
+              alt={filteredProjects[currentProject].nome}
+            />
+            <p>{filteredProjects[currentProject].descrição}</p>
             <div>
-              <a href={project.git} target="_blank" rel="noopener noreferrer">
+              <a
+                href={filteredProjects[currentProject].git}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="bx bxl-github"></i>
               </a>
-              {project.deploy && (
+              {filteredProjects[currentProject].deploy && (
                 <a
-                  href={project.deploy}
+                  href={filteredProjects[currentProject].deploy}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -47,7 +72,7 @@ function Projects() {
               )}
             </div>
             <div className="tech__container">
-              {project.tech.map((tech, index) => (
+              {filteredProjects[currentProject].tech.map((tech, index) => (
                 <img
                   key={index}
                   src={tech}
@@ -56,8 +81,20 @@ function Projects() {
               ))}
             </div>
           </li>
-        ))}
+        )}
       </StyledProjectsList>
+
+      <StyledNavigationButtons>
+        <button onClick={prevProject} disabled={currentProject === 0}>
+          <i className="bx bxs-left-arrow-circle"></i>
+        </button>
+        <button
+          onClick={nextProject}
+          disabled={currentProject === filteredProjects.length - 1}
+        >
+          <i className="bx bxs-right-arrow-circle"></i>
+        </button>
+      </StyledNavigationButtons>
     </StyledProjects>
   );
 }
