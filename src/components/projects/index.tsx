@@ -48,37 +48,46 @@ function Projects() {
           <li key={filteredProjects[currentProject].id}>
             <h2>{filteredProjects[currentProject].nome}</h2>
             {/* <p>{filteredProjects[currentProject].tipo}</p> */}
-            <img
-              src={filteredProjects[currentProject].img}
-              alt={filteredProjects[currentProject].nome}
-            />
-            <p>{filteredProjects[currentProject].descrição}</p>
-            <div>
-              <a
-                href={filteredProjects[currentProject].git}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bx bxl-github"></i>
-              </a>
-              {filteredProjects[currentProject].deploy && (
-                <a
-                  href={filteredProjects[currentProject].deploy}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bx bx-rocket"></i>
-                </a>
-              )}
-            </div>
-            <div className="tech__container">
-              {filteredProjects[currentProject].tech.map((tech, index) => (
-                <img
-                  key={index}
-                  src={tech}
-                  alt={`imagem da tecnologia utilizada neste projeto - ${index}`}
-                />
-              ))}
+            <div className="projects__details__container">
+              <img
+                src={filteredProjects[currentProject].img}
+                alt={filteredProjects[currentProject].nome}
+              />
+              <div className="projects__details">
+                <p>{filteredProjects[currentProject].descrição}</p>
+                <div className="projects__details__links__tech">
+                  <div className="projects__details__links">
+                    <a
+                      href={filteredProjects[currentProject].git}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i className="bx bxl-github"></i>
+                    </a>
+                    {filteredProjects[currentProject].deploy && (
+                      <a
+                        href={filteredProjects[currentProject].deploy}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="bx bx-rocket"></i>
+                      </a>
+                    )}
+                  </div>
+
+                  <div className="tech__container">
+                    {filteredProjects[currentProject].tech.map(
+                      (tech, index) => (
+                        <img
+                          key={index}
+                          src={tech}
+                          alt={`imagem da tecnologia utilizada neste projeto - ${index}`}
+                        />
+                      )
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
           </li>
         )}
