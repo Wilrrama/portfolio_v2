@@ -251,7 +251,7 @@ export const StyledProjectsList = styled.ul`
   @media (max-width: 500px) {
     li {
       width: 100%;
-      height: auto;
+      height: 400px;
       padding: 0.5rem;
 
       /* h2 {
