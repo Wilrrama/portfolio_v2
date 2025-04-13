@@ -96,10 +96,6 @@ export function Experience() {
             <p>
               <strong>Período:</strong> 2024
             </p>
-            <p>
-              <strong>Função:</strong> Motorista e Coordenador de Ações de
-              Divulgação
-            </p>
 
             <p>
               <strong>Descrição:</strong> Participei ativamente da campanha como
@@ -135,6 +131,58 @@ export function Experience() {
 
             <a href="https://dr-george22.vercel.app/" target="_blank">
               Acesse a plataforma da campanha
+            </a>
+          </div>
+        </li>
+
+        {/* 'Entregador' */}
+        <li className="experience__list__container">
+          <div className="experience__container__title">
+            <img src="experience/entregas.jpg" alt="Logo da Entregas" />
+            <h2>Entregas</h2>
+          </div>
+
+          <div className="experience__container__details">
+            <p>
+              <strong>Função:</strong> Motorista e Entregador
+            </p>
+            <p>
+              <strong>Período:</strong> 2025
+            </p>
+
+            <p>
+              <strong>Descrição:</strong> Atuando como motorista entregador
+              realizando o transporte e a entrega de produtos em diferentes
+              regiões, sempre prezando pela pontualidade, organização e bom
+              atendimento ao cliente. Essa experiência me ajudou a desenvolver
+              ainda mais minha responsabilidade, foco em resultados e
+              proatividade.
+            </p>
+
+            <p>
+              Desenvolvi uma aplicação para controle interno das ordens de
+              serviço, com o objetivo de facilitar o registro, das entregas. A
+              aplicação foi construída utilizando{" "}
+              <strong>React com TypeScript</strong>, oferecendo uma interface
+              simples e funcional para o dia a dia.
+            </p>
+            <p>
+              <strong>Atividades desempenhadas:</strong>
+            </p>
+            <ul>
+              <li>Coleta, transporte e entrega de mercadorias</li>
+              <li>Organização das rotas e otimização do tempo</li>
+              <li>Atendimento cordial e direto com os clientes</li>
+              <li>
+                Criação de uma aplicação web para controle de ordens de serviço
+              </li>
+              <li>
+                Uso da aplicação para registrar entregas e status das ordens
+              </li>
+            </ul>
+
+            <a href="https://cafs20.vercel.app/" target="_blank">
+              Acesse a aplicação
             </a>
           </div>
         </li>

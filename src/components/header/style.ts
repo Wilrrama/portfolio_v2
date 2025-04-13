@@ -1,53 +1,10 @@
-import styled, { keyframes } from "styled-components";
-
-const slideInFromTop = keyframes`
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-`;
-
-const slideInFromRight = keyframes`
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-`;
-
-const glowEffect = keyframes`
-  0% {
-    text-shadow: 0 0 5px var(--main-color);
-  }
-  50% {
-    text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
-  }
-  100% {
-    text-shadow: 0 0 5px var(--main-color);
-  }
-`;
-
-const bounceIn = keyframes`
-  0% {
-    transform: scale(0.3);
-    opacity: 0;
-  }
-  70% {
-    transform: scale(1.1);
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
+import styled from "styled-components";
+import {
+  bounceIn,
+  glowEffect,
+  slideInFromRight,
+  slideInFromTop,
+} from "../../styles/effectsStyles";
 
 export const StyledHeader = styled.header<{ showMenu: boolean }>`
   display: ${(props) => (props.showMenu ? "block" : "none")};

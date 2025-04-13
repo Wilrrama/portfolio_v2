@@ -10,21 +10,26 @@ export function Bibliography() {
         </div>
         <div className="details__bibliography">
           <p>
-            Wilson Alves Franchi dos Santos é Técnico em Informática, Analista
-            de Sistemas e Desenvolvedor Full Stack.
+            Sou Wilson Alves Franchi dos Santos, Técnico em Informática,
+            Analista de Sistemas e Desenvolvedor Full Stack.
           </p>
           <p>
-            Com um perfil empreendedor e habilidades em tecnologias de front-end
-            e back-end, Wilson se destaca pela combinação de experiência prática
-            e aprendizado contínuo.
+            Atualmente trabalho como entregador de mercadorias (delivery), onde
+            desenvolvo diariamente habilidades como organização, agilidade,
+            responsabilidade e foco no atendimento — qualidades que também levo
+            para o desenvolvimento de software.
           </p>
           <p>
-            Possui um histórico diversificado, com atuação em áreas como a
-            gestão de uma loja própria de informática ,games e música, a
-            organização de eventos esportivos e a participação em campanhas
-            políticas. Essas vivências fortaleceram suas habilidades em
-            comunicação, planejamento e liderança — competências que ele agora
-            traz para o campo do desenvolvimento de software.
+            Tenho uma trajetória marcada por experiências diversas que
+            contribuíram para minha formação pessoal e profissional. Já
+            gerenciei uma loja própria de informática, games e música, organizei
+            campeonatos de futebol amador e atuei em campanhas políticas, sempre
+            com foco em planejamento, comunicação e liderança.
+          </p>
+          <p>
+            Com um perfil autodidata e criativo, sou apaixonado por tecnologia e
+            estou sempre em busca de aprender mais e entregar soluções que
+            realmente façam a diferença.
           </p>
         </div>
       </div>
