@@ -1,35 +1,5 @@
-import styled, { keyframes } from "styled-components";
-
-const glowEffect = keyframes`
-  0% {
-    text-shadow: 0 0 5px var(--main-color);
-  }
-  50% {
-    text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
-  }
-  100% {
-    text-shadow: 0 0 5px var(--main-color);
-  }
-`;
-
-const bounceIn = keyframes`
-  0% {
-    transform: scale(0.3);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.8;
-  }
-  70% {
-    transform: scale(0.9);
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
+import styled from "styled-components";
+import { bounceIn, glowEffect } from "../../styles/effectsStyles";
 
 export const StyledContact = styled.section`
   position: relative;

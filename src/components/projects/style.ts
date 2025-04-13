@@ -1,44 +1,5 @@
-import styled, { keyframes } from "styled-components";
-
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
-
-const glowEffect = keyframes`
-  0% {
-    text-shadow: 0 0 5px var(--main-color);
-  }
-  50% {
-    text-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
-  }
-  100% {
-    text-shadow: 0 0 5px var(--main-color);
-  }
-`;
-
-const bounceIn = keyframes`
-  0% {
-    transform: scale(0.3);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.8;
-  }
-  70% {
-    transform: scale(0.9);
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-`;
+import styled from "styled-components";
+import { bounceIn, fadeIn, glowEffect } from "../../styles/effectsStyles";
 
 export const StyledProjects = styled.section`
   display: flex;
@@ -251,7 +212,7 @@ export const StyledProjectsList = styled.ul`
   @media (max-width: 500px) {
     li {
       width: 100%;
-      height: 400px;
+      height: 420px;
       padding: 0.5rem;
 
       /* h2 {
@@ -264,7 +225,7 @@ export const StyledProjectsList = styled.ul`
 
         img {
           width: 100%;
-          max-width: 150px;
+          max-width: 250px;
           height: auto;
         }
 
@@ -273,7 +234,7 @@ export const StyledProjectsList = styled.ul`
 
           p {
             padding: 0.5rem;
-            font-size: 0.9rem; /* Reduzir tamanho do texto */
+            font-size: 0.9rem;
           }
 
           .projects__details__links__tech {
