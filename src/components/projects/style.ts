@@ -113,6 +113,7 @@ export const StyledProjectsList = styled.ul`
       color: var(--main-color);
       margin-bottom: 1rem;
       font-weight: 600;
+      text-align: center;
     }
 
     .projects__details__container {
@@ -212,9 +213,10 @@ export const StyledProjectsList = styled.ul`
 
   @media (max-width: 500px) {
     li {
-      width: 90%;
-      height: 450px;
+      width: 95%;
+      height: 480px;
       padding: 0.5rem;
+      display: flex;
 
       /* h2 {
         font-size: 1.2rem; 
@@ -226,7 +228,6 @@ export const StyledProjectsList = styled.ul`
 
         img {
           width: 150px;
-
           height: 150px;
         }
 
