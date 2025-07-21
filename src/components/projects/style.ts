@@ -128,6 +128,7 @@ export const StyledProjectsList = styled.ul`
       }
       .projects__details {
         display: flex;
+        width: 400px;
         flex-direction: column;
         gap: 30px;
 
