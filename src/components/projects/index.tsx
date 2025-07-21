@@ -15,7 +15,9 @@ function Projects() {
     // if (type === "Principais") {
     //   setFilteredProjects(projects);
     // } else {
-    setFilteredProjects(projects.filter((project) => project.tipo === type));
+    setFilteredProjects(
+      projects.filter((project) => project.tipo.includes(type))
+    );
     // }
     setCurrentProject(0);
   };

@@ -21,12 +21,14 @@ import mongoDb from "/tecnologies/mongodb.svg";
 import drGeorge22 from "/projects/18.DrGeorge22.jpg";
 import equipeDigital from "/projects/16.equipeDigital.png";
 import boleiros3 from "/projects/17.boleiros3.jpeg";
+import cafs from "/projects/19.Caf_car.png";
+import ocr from "/projects/20.OCR.png";
 
 export interface IProjects {
   id: number;
   nome: string;
   img: string;
-  tipo: string;
+  tipo: string[];
   descrição: string;
   git: string;
   deploy?: string;
@@ -35,10 +37,31 @@ export interface IProjects {
 
 export const projects = [
   {
+    id: 19,
+    nome: "Gerenciamento CAF(s)",
+    img: cafs,
+    tipo: ["Principais", "Front-End"],
+    descrição: "App para gerenciar os valores da CAF e gastos com o automóvel",
+    git: "https://github.com/Wilrrama",
+    deploy: "https://cafs20.vercel.app/",
+    tech: [react],
+  },
+  {
+    id: 20,
+    nome: "Extrair Texto da Imagem",
+    img: ocr,
+    tipo: ["Principais", "Front-End"],
+    descrição:
+      "Extrair Texto da Imagem, para envio do código para liberação da entrega do cartão",
+    git: "https://github.com/Wilrrama",
+    deploy: "https://ocr-app-ten-lac.vercel.app/",
+    tech: [react],
+  },
+  {
     id: 18,
     nome: "Dr. George 22",
     img: drGeorge22,
-    tipo: "Principais",
+    tipo: ["Principais", "Front-End"],
     descrição: "Site para Campanha Política",
     git: "https://github.com/Wilrrama",
     deploy: "https://dr-george22.vercel.app/",
@@ -48,7 +71,7 @@ export const projects = [
     id: 17,
     nome: "Boleiros 3",
     img: boleiros3,
-    tipo: "Principais",
+    tipo: ["Principais", "Front-End"],
     descrição: "Gerenciador de Equipe",
     git: "https://github.com/Wilrrama/boleiros_v3",
     deploy: "https://boleiros-v3.vercel.app/",
@@ -58,7 +81,7 @@ export const projects = [
     id: 16,
     nome: "Lista de Contatos",
     img: equipeDigital,
-    tipo: "Principais",
+    tipo: ["Principais", "Back-End", "Full-Stack"],
     descrição: "Desafio Equipe Digital, Contact list",
     git: "https://github.com/Wilrrama/user_auth",
     deploy: "",
@@ -68,7 +91,7 @@ export const projects = [
     id: 15,
     nome: "To Do List",
     img: toDo_JackExperts,
-    tipo: "Principais",
+    tipo: ["Principais", "Back-End", "Full-Stack"],
     descrição: "Desafio Jack Experts, To do list",
     git: "https://github.com/Wilrrama/Desafio_ToDoList",
     deploy: "",
@@ -88,7 +111,7 @@ export const projects = [
     id: 13,
     nome: "Lista de contatos",
     img: lista_contatos,
-    tipo: "FullStack",
+    tipo: ["Principais", "Back-End", "Full-Stack"],
     descrição: "Aplicação full-stack lista de contatos",
     git: "https://github.com/Kenzie-Academy-Brasil-Developers/m6_Projeto_FullStack",
     deploy: "",
