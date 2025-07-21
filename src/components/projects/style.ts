@@ -172,8 +172,8 @@ export const StyledProjectsList = styled.ul`
           .tech__container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
+            /* flex-wrap: wrap; */
+            gap: 10px;
             padding: 1rem;
             img {
               width: 50px;
@@ -212,8 +212,8 @@ export const StyledProjectsList = styled.ul`
 
   @media (max-width: 500px) {
     li {
-      width: 100%;
-      height: 420px;
+      width: 90%;
+      height: 450px;
       padding: 0.5rem;
 
       /* h2 {
@@ -225,21 +225,21 @@ export const StyledProjectsList = styled.ul`
         align-items: center;
 
         img {
-          width: 100%;
-          max-width: 250px;
-          height: auto;
+          width: 150px;
+
+          height: 150px;
         }
 
         .projects__details {
-          gap: 15px;
-
+          gap: 10px;
+          width: 250px;
           p {
             padding: 0.5rem;
             font-size: 0.9rem;
           }
 
           .projects__details__links__tech {
-            gap: 10px;
+            gap: 1px;
 
             /* .projects__details__links {
               a {
