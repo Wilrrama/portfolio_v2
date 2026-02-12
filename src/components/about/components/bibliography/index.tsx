@@ -5,9 +5,9 @@ export function Bibliography() {
     <StyledBibliography>
       <h1>Bibliografia</h1>
       <div className="container__bibliography">
-        <div className="img__bibliography">
+        {/* <div className="img__bibliography">
           <img src="/perfil/bibliography.jpg" alt="imagem do wilson" />
-        </div>
+        </div> */}
         <div className="details__bibliography">
           <p>
             Sou Wilson Alves Franchi dos Santos, Técnico em Informática,

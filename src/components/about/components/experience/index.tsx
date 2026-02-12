@@ -186,6 +186,33 @@ export function Experience() {
             </a>
           </div>
         </li>
+
+        {/* Logistica */}
+        <li className="experience__list__container">
+          <div className="experience__container__title">
+            <img src="experience/stlog.png" alt="Logo da Loja Metal Games" />
+            <h2>STT Log</h2>
+          </div>
+          <div className="experience__container__details">
+            <p>
+              <strong>Função:</strong> Diarista
+            </p>
+            <p>
+              <strong>Período:</strong> 2026 Jan - presente
+            </p>
+            <p>
+              <strong>Descrição:</strong> STT Log - Empresa de Logistia
+            </p>
+            <p>
+              <strong>Atividades desempenhadas:</strong>
+            </p>
+            <ul>
+              <li>Auxiliar</li>
+              <li>Carga e Descarga - Caminões</li>
+            </ul>
+          </div>
+          {/* <a target="_blank">Visite a loja | em construção</a> */}
+        </li>
       </ul>
     </StyledExperience>
   );

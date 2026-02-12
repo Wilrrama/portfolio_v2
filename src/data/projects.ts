@@ -23,6 +23,7 @@ import equipeDigital from "/projects/16.equipeDigital.png";
 import boleiros3 from "/projects/17.boleiros3.jpeg";
 import cafs from "/projects/19.Caf_car.png";
 import ocr from "/projects/20.OCR.png";
+import delivery from "../../public/projects/21.delivery.png";
 
 export interface IProjects {
   id: number;
@@ -44,6 +45,16 @@ export const projects = [
     descrição: "App para gerenciar os valores da CAF e gastos com o automóvel",
     git: "https://github.com/Wilrrama",
     deploy: "https://cafs20.vercel.app/",
+    tech: [react],
+  },
+  {
+    id: 21,
+    nome: "Organizador de Rotas",
+    img: delivery,
+    tipo: ["Principais", "Front-End"],
+    descrição: "Adicione endereços por CEP e organize sua rota",
+    git: "https://github.com/Wilrrama",
+    deploy: "https://delivery-route-app.vercel.app/",
     tech: [react],
   },
   {
